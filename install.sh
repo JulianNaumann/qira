@@ -62,7 +62,7 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     echo "Installing OS X dependencies"
     brew update
     brew install python capstone graphviz
-    pip install virtualenv
+    $PIP install virtualenv
     cd tracers
     ./pin_build.sh
     cd ../
